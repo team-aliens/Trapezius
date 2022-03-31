@@ -9,3 +9,5 @@ spring:
   jpa:
     generate-ddl: false
     show-sql: false
+    hibernate:
+      ddl-auto: create
