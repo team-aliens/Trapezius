@@ -4,13 +4,13 @@ import com.example.trapezius.api.dto.LoginRequest;
 import com.example.trapezius.api.dto.SignupRequest;
 import com.example.trapezius.entity.User;
 import com.example.trapezius.entity.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class UserService {
 
-    @Autowired
     private UserRepository userRepository;
 
     public String signup(SignupRequest request) {
