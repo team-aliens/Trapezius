@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class UserService {
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public String signup(SignupRequest request) {
         userRepository.save(new User(request.getId(), request.getPassword(), request.getName()));
