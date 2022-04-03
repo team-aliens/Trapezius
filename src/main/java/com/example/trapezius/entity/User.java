@@ -1,16 +1,10 @@
 package com.example.trapezius.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Getter
-@Entity
-@NoArgsConstructor
+@Data
 @AllArgsConstructor
 public class User {
 
