@@ -2,9 +2,12 @@ package com.example.trapezius.entity;
 
 import lombok.*;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Data
+@Getter
+@Entity
+@NoArgsConstructor
 @AllArgsConstructor
 public class User {
 
