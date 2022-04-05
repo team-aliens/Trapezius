@@ -21,10 +21,4 @@ public class Post {
     private String title;
 
     private String content;
-
-    public Post update(String title, String content) {
-        this.title = title;
-        this.content = content;
-        return this;
-    }
 }
