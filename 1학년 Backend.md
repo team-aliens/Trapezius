@@ -25,3 +25,36 @@
   ![img](https://media.vlpt.us/images/sdc337dc/post/72ffbf58-513d-47b3-a8d3-0d6f0cb5fb52/image.png)
 
 - 요청과 응답에 담겨있는 정보
+
+
+
+### Java
+
+접근제한자 :
+
+public - 모두 허용
+
+protected - 같은 패키지 허용, 상속관계 허용
+
+default - 같은 패키지 허용 
+
+private - 같은 클래스 내에서만 허용
+
+
+
+```java
+public class Main {
+    private String hello;
+
+    //Getter
+    public String getHello() {
+        return hello;
+    }
+
+    //Setter
+    public void setHello(String hello) {
+        this.hello = hello;
+    }
+}
+```
+
